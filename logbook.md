@@ -1,0 +1,7 @@
+Abstract:-
+Managing an NGO involves handling multiple tasks such as fundraising, donor management, volunteer coordination, and project tracking. To simplify and streamline these processes, we are developing an NGO Management System as our semester project using HTML, CSS, JavaScript, and PHP. This system will provide a user-friendly platform where NGOs can efficiently manage their operations. Key features include donor and fund management, allowing organizations to track donations and generate reports, volunteer management, where NGOs can onboard and assign volunteers to different projects, and project/event tracking, ensuring smooth execution of initiatives. Additionally, an admin panel will facilitate overall system management and decision-making. By leveraging web technologies, our system will enhance efficiency, transparency, and collaboration for NGOs, helping them focus more on their mission rather than administrative challenges. This project aims to create a practical and impactful solution that supports NGOs in making a meaningful difference in society.
+
+Atharv Mahendra Patil_231106043_(DS043)
+Rohit Rajendra More_231106051_(DS050)
+Saurabh Sanjay Yeole_231106035_(DS035)
+Sudarshan Bharat Patil_231106004_(DS006)
