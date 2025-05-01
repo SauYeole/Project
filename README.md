@@ -1,6 +1,6 @@
 The NGO Management System helps NGOs manage projects, donations, volunteers, finances, and reports efficiently to improve transparency and impact.
 
-##NGO Management System
+## NGO Management System
 Simple NGO Management System built with php as a Mini Project for deeper understandin of how databases are managed and work flow of it Technologies used
 
 BOOTSTRAP
