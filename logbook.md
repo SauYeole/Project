@@ -1,4 +1,4 @@
-Abstract:-
+## Abstract:-
 The efficient management of Non-Governmental Organizations (NGOs) is essential for achieving their social objectives and maximizing their impact. NGOs often face operational challenges in areas such as donor management, fundraising, volunteer coordination, and the planning and execution of projects and events. These tasks, when managed manually or with inadequate tools, can lead to inefficiencies, data loss, poor communication, and lack of transparency. To address these issues, we are developing a comprehensive NGO Management System as our semester project, leveraging widely adopted web technologies including HTML, CSS, JavaScript, and PHP.
 
 The primary objective of this system is to streamline the core administrative functions of NGOs by providing an all-in-one digital platform that enhances usability, scalability, and data accessibility. The system includes robust donor and fund management modules that allow NGOs to maintain detailed records of contributions, track donation histories, and generate insightful financial reports. This helps ensure financial transparency and fosters trust with stakeholders.
