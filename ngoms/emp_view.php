@@ -23,7 +23,7 @@
 <html lang="en">
     <head>        
         <!-- META SECTION -->
-       <title>NGO Management System | By Harshada Patil</title>            
+       <title>NGO Management System | By Atharv PAtil</title>            
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
