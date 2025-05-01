@@ -8,6 +8,7 @@ Simple NGO Management System built with php as a Mini Project for deeper underst
 • PHP
 
 • MYSQL
+
 • javaScript
 
 Features
