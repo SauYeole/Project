@@ -1,19 +1,17 @@
 <?php 
+include 'include/conn.php';
 
-	include 'include/conn.php';
+$id = $_GET['id'];
 
-	$id=$_GET['id'];
+$stmt = $conn->prepare("DELETE FROM add_beni WHERE don_id = ?");
+$stmt->bind_param("i", $id);
 
-	$del=mysql_query("DELETE FROM add_beni WHERE don_id=$id");
+if ($stmt->execute()) {
+    header("Location: beni_list.php");
+    exit;
+} else {
+    echo "Failed: " . $stmt->error;
+}
 
-		if ($del)
-		{
-			echo "Deleted";
-			header('location:beni_list.php');
-		}
-		else
-		{
-			echo "Failed";
-		}
-
+$stmt->close();
 ?>
