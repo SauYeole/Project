@@ -31,18 +31,27 @@ Simple NGO Management System built with php as a Mini Project for deeper underst
    
 Has access to all the features
 
-3. Donor
+2. Donor
    
 Can Donate
 
-View Donations
-Manage Transactions
-Donate Items
+•View Donations
+
+•Manage Transactions
+
+•Donate Items
+
 3. Volunteer
 The Volunteer who is Conducting Tasks
 
-Record Tasks
-Add Task
-Software Requirements
-xampp
-browser
+•Record Tasks
+
+•Add Task
+
+## Software Requirements
+
+•xampp
+
+•browser
+
+•VScode
