@@ -107,7 +107,7 @@ while ($num1 = mysqli_fetch_assoc($query1)) {
                                     <span class="fa fa-user"></span>
                                 </div>
                                 <div class="widget-data">
-                                    <div class="widget-int num-count"><?php echo $total ?></div>
+                                    <div class="widget-int num-count"><?php echo $total; ?></div>
                                     <div class="widget-title">Total Employee</div>
                                     <div class="widget-subtitle">at NGO</div>
                                 </div>
