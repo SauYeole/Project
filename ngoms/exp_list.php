@@ -115,9 +115,9 @@
 
                                                 include 'include/conn.php';
 
-                                                $sel=mysql_query("SELECT * FROM expenditure");
+                                                $sel=mysqli_query($conn,"SELECT * FROM expenditure");
 
-                                                while($fetch=mysql_fetch_assoc($sel))
+                                                while($fetch=mysqli_fetch_assoc($sel))
                                                 {
                                                     $id=$fetch['exp_id'];
                                                     $exp_for=$fetch['exp_for'];

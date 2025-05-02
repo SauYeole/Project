@@ -13,7 +13,7 @@
 		$emp_sal=$_POST['emp_sal'];
 		$emp_doj=$_POST['emp_doj'];
 
-		$ins=mysql_query("INSERT INTO add_emp(full_name,emp_addr,emp_mob,emp_email,emp_dob,emp_desi,emp_sal,emp_doj) VALUES('$full_name','$emp_addr','$emp_mob','$emp_email','$emp_dob','$emp_desi','$emp_sal','$emp_doj')");
+		$ins=mysqli_query($conn,"INSERT INTO add_emp(full_name,emp_addr,emp_mob,emp_email,emp_dob,emp_desi,emp_sal,emp_doj) VALUES('$full_name','$emp_addr','$emp_mob','$emp_email','$emp_dob','$emp_desi','$emp_sal','$emp_doj')");
 
 		if ($ins)
 		{

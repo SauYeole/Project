@@ -4,7 +4,7 @@
 
 	$id=$_GET['id'];
 
-	$del=mysql_query("DELETE FROM add_eve WHERE eve_id=$id");
+	$del=mysqli_query($conn,"DELETE FROM add_eve WHERE eve_id=$id");
 
 		if ($del)
 		{

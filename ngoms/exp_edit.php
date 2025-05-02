@@ -3,8 +3,8 @@
     include 'include/conn.php';
     $id=$_GET['id'];
 
-    $sel=mysql_query("SELECT * FROM expenditure WHERE exp_id='$id'");
-    $fetch=mysql_fetch_assoc($sel);
+    $sel=mysqli_query($conn,"SELECT * FROM expenditure WHERE exp_id='$id'");
+    $fetch=mysqli_fetch_assoc($sel);
 
     $exp_id=$fetch['exp_id'];
     $exp_for=$fetch['exp_for'];

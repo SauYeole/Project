@@ -4,8 +4,8 @@
 
     $id=$_GET['id'];
 
-    $sel=mysql_query("SELECT * FROM add_emp WHERE emp_id='$id'");
-    $fetch=mysql_fetch_assoc($sel);
+    $sel=mysqli_query($conn,"SELECT * FROM add_emp WHERE emp_id='$id'");
+    $fetch=mysqli_fetch_assoc($sel);
 
         $emp_id=$fetch['emp_id'];
         $full_name=$fetch['full_name'];

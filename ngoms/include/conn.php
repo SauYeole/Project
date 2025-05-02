@@ -1,12 +1,15 @@
+
 <?php 
-	
-	$host='localhost';
-	$user='root';
-	$pass='';
-	$db='ngoms';
+$host = 'localhost';
+$user = 'root';
+$pass = '';
+$db   = 'ngoms';
 
-	mysql_connect($host,$user,$pass) or die(mysql_error());
+// Create connection and select database in one step
+$conn = mysqli_connect($host, $user, $pass, $db);
 
-	mysql_select_db($db) or die(mysql_error());
-
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
 ?>

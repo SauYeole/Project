@@ -9,7 +9,7 @@
 		$feedback=$_POST['feedback'];
 		$feed_date=$_POST['feed_date'];
 
-		$upd=mysql_query("UPDATE feedback SET feed_name='$feed_name',feedback='$feedback',feed_date='$feed_date' WHERE feed_id='$feed_id'");
+		$upd=mysqli_query($conn,"UPDATE feedback SET feed_name='$feed_name',feedback='$feedback',feed_date='$feed_date' WHERE feed_id='$feed_id'");
 		if ($upd)
 		{
 			header('location:feed_list.php');

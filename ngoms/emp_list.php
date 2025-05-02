@@ -114,9 +114,10 @@
 
                                                 include 'include/conn.php';
 
-                                                $sel=mysql_query("SELECT * FROM add_emp");
+                                                $sel=mysqli_query($conn, "SELECT * FROM add_emp");
 
-                                                while($fetch=mysql_fetch_assoc($sel))
+
+                                                while($fetch=mysqli_fetch_assoc($sel))
                                                 {
                                                     $id=$fetch['emp_id'];
                                                     $full_name=$fetch['full_name'];

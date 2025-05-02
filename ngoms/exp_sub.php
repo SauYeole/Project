@@ -10,7 +10,7 @@
 		$exp_amt=$_POST['exp_amt'];
 		$exp_date=$_POST['exp_date'];
 
-		$ins=mysql_query("INSERT INTO expenditure(exp_for,exp_desc,exp_by,exp_amt,exp_date) VALUES('$exp_for','$exp_desc','$exp_by','$exp_amt','$exp_date')");
+		$ins=mysqli_query($conn,"INSERT INTO expenditure(exp_for,exp_desc,exp_by,exp_amt,exp_date) VALUES('$exp_for','$exp_desc','$exp_by','$exp_amt','$exp_date')");
 
 		if ($ins)
 		{

@@ -15,7 +15,7 @@
 			$evnt_yr=$_POST['evnt_yr'];
 
 
-			$ins=mysql_query("INSERT INTO add_eve(event_name,evnt_desc,event_coord,coord_mob,evnt_addre,evnt_fund,evnt_day,evnt_mnth,evnt_yr) VALUES('$event_name','$evnt_desc','$event_coord','$coord_mob','$evnt_addre','$evnt_fund','$evnt_day','$evnt_mnth','$evnt_yr')");
+			$ins=mysqli_query($conn,"INSERT INTO add_eve(event_name,evnt_desc,event_coord,coord_mob,evnt_addre,evnt_fund,evnt_day,evnt_mnth,evnt_yr) VALUES('$event_name','$evnt_desc','$event_coord','$coord_mob','$evnt_addre','$evnt_fund','$evnt_day','$evnt_mnth','$evnt_yr')");
 
 			if ($ins)
 			{

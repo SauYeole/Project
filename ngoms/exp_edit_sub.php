@@ -11,7 +11,7 @@
 		$exp_amt=$_POST['exp_amt'];
 		$exp_date=$_POST['exp_date'];
 
-		$upd=mysql_query("UPDATE expenditure SET exp_for='$exp_for',exp_desc='$exp_desc',exp_by='$exp_by',exp_amt='$exp_amt',exp_date='$exp_date' WHERE exp_id='$exp_id'");
+		$upd=mysqli_query($conn,"UPDATE expenditure SET exp_for='$exp_for',exp_desc='$exp_desc',exp_by='$exp_by',exp_amt='$exp_amt',exp_date='$exp_date' WHERE exp_id='$exp_id'");
 
 		if ($upd)
 		{

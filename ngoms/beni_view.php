@@ -4,9 +4,9 @@
 
     $id=$_GET['id'];
 
-    $sel=mysql_query("SELECT * FROM add_beni WHERE don_id='$id'");
+    $sel=mysqli_query($conn,"SELECT * FROM add_beni WHERE don_id='$id'");
 
-    $fetch=mysql_fetch_assoc($sel);
+    $fetch=mysqli_fetch_assoc($sel);
 
         $don_id=$fetch['don_id'];
         $don_name=$fetch['don_name'];

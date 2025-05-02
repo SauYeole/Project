@@ -13,7 +13,7 @@
 		$dona_amt=$_POST['dona_amt'];
 		$dona_date=$_POST['dona_date'];
 
-		$ins=mysql_query("INSERT INTO add_donar(don_name,don_addr,don_mob,don_email,don_dob,dona_type,dona_amt,dona_date) VALUES('$don_name','$don_addr','$don_mob','$don_email','$don_dob','$dona_type','$dona_amt','$dona_date')");
+		$ins=mysqli_query($conn,"INSERT INTO add_donar(don_name,don_addr,don_mob,don_email,don_dob,dona_type,dona_amt,dona_date) VALUES('$don_name','$don_addr','$don_mob','$don_email','$don_dob','$dona_type','$dona_amt','$dona_date')");
 
 		if ($ins)
 		{

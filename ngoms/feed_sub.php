@@ -8,7 +8,7 @@
 		$feedback=$_POST['feedback'];
 		$feed_date=$_POST['feed_date'];
 
-		$ins=mysql_query("INSERT INTO feedback(feed_name,feedback,feed_date) VALUES('$feed_name','$feedback','$feed_date')");
+		$ins=mysqli_query($conn,"INSERT INTO feedback(feed_name,feedback,feed_date) VALUES('$feed_name','$feedback','$feed_date')");
 		if ($ins)
 		{
 			header('location:feed_list.php');

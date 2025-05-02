@@ -116,9 +116,9 @@
 
                                                 include 'include/conn.php';
 
-                                                $sel=mysql_query("SELECT * FROM add_eve");
+                                                $sel=mysqli_query($conn,"SELECT * FROM add_eve");
 
-                                                while($fetch=mysql_fetch_assoc($sel))
+                                                while($fetch=mysqli_fetch_assoc($sel))
                                                 {
                                                     $id=$fetch['eve_id'];
                                                     $event_name=$fetch['event_name'];

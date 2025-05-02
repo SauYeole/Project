@@ -1,57 +1,45 @@
 <?php 
+include 'include/conn.php';  // This must define $conn using mysqli_connect()
 
-    include 'include/conn.php';
+$result = mysqli_query($conn, "SELECT count(1) FROM add_emp");
+$row = mysqli_fetch_array($result);
+$total = $row[0];
 
-    $result = mysql_query("select count(1) FROM add_emp");
-    $row = mysql_fetch_array($result);
+$result1 = mysqli_query($conn, "SELECT count(1) FROM add_vol");
+$row1 = mysqli_fetch_array($result1);
+$total1 = $row1[0];
 
-    $total = $row[0];
+$result2 = mysqli_query($conn, "SELECT count(1) FROM add_eve");
+$row2 = mysqli_fetch_array($result2);
+$total2 = $row2[0];
 
-    $result1 = mysql_query("select count(1) FROM add_vol");
-    $row1 = mysql_fetch_array($result1);
+$result3 = mysqli_query($conn, "SELECT count(1) FROM add_donar");
+$row3 = mysqli_fetch_array($result3);
+$total3 = $row3[0];
 
-    $total1 = $row1[0];
+$result4 = mysqli_query($conn, "SELECT count(1) FROM add_beni");
+$row4 = mysqli_fetch_array($result4);
+$total4 = $row4[0];
 
-    $result2 = mysql_query("select count(1) FROM add_eve");
-    $row2 = mysql_fetch_array($result2);
+$query = mysqli_query($conn, "SELECT * FROM add_eve");
+$qty = 0;
+while ($num = mysqli_fetch_assoc($query)) {
+    $qty += $num['evnt_fund'];
+}
 
-    $total2 = $row2[0];
-
-    $result3 = mysql_query("select count(1) FROM add_donar");
-    $row3 = mysql_fetch_array($result3);
-
-    $total3 = $row3[0];
-
-     $result4 = mysql_query("select count(1) FROM add_beni");
-    $row4 = mysql_fetch_array($result4);
-
-    $total4 = $row4[0];
-
-    $query = mysql_query("SELECT * FROM add_eve");
-
-    $qty= 0;
-    while ($num = mysql_fetch_assoc ($query)) {
-
-        $qty += $num['evnt_fund'];
-
-    }
-
-     $query1 = mysql_query("SELECT * FROM expenditure");
-
-    $qty1= 0;
-    while ($num1 = mysql_fetch_assoc ($query1)) {
-
-        $qty1 += $num1['evnt_fund'];
-
-    }
-
+$query1 = mysqli_query($conn, "SELECT * FROM expenditure");
+$qty1 = 0;
+while ($num1 = mysqli_fetch_assoc($query1)) {
+    $qty1 += $num1['evnt_fund'];
+}
+?>
 
 ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>        
         <!-- META SECTION -->
-       <title>NGO Management System | By Harshada Patil</title>            
+       <title>NGO Management System | By Atharv Patil</title>            
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

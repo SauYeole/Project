@@ -14,7 +14,7 @@
 		$emp_sal=$_POST['emp_sal'];
 		$emp_doj=$_POST['emp_doj'];
 
-		$update=mysql_query("UPDATE add_emp SET full_name='$full_name',emp_addr='$emp_addr',emp_mob='$emp_mob',emp_email='$emp_email',emp_dob='$emp_dob',emp_desi='$emp_desi',emp_sal='$emp_sal',emp_doj='$emp_doj' WHERE emp_id='$emp_id'");
+		$update=mysqli_query($conn,"UPDATE add_emp SET full_name='$full_name',emp_addr='$emp_addr',emp_mob='$emp_mob',emp_email='$emp_email',emp_dob='$emp_dob',emp_desi='$emp_desi',emp_sal='$emp_sal',emp_doj='$emp_doj' WHERE emp_id='$emp_id'");
 
 		if ($update)
 		{

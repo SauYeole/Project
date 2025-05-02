@@ -3,8 +3,8 @@
 
     $id=$_GET['id'];
 
-    $sele=mysql_query("SELECT * FROM add_eve WHERE eve_id='$id'");
-    $fetch=mysql_fetch_assoc($sele);
+    $sele=mysqli_query($conn,"SELECT * FROM add_eve WHERE eve_id='$id'");
+    $fetch=mysqli_fetch_assoc($sele);
 
             $eve_id=$fetch['eve_id'];
             $event_name=$fetch['event_name'];

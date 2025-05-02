@@ -114,9 +114,9 @@
 
                                                 include 'include/conn.php';
 
-                                                $sel=mysql_query("SELECT * FROM feedback");
+                                                $sel=mysqli_query($conn,"SELECT * FROM feedback");
 
-                                                while($fetch=mysql_fetch_assoc($sel))
+                                                while($fetch=mysqli_fetch_assoc($sel))
                                                 {
                                                     $id=$fetch['feed_id'];
                                                     $feed_name=$fetch['feed_name'];

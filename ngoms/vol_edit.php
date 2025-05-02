@@ -4,8 +4,8 @@
 
     $id=$_GET['id'];
 
-    $sel=mysql_query("SELECT * FROM add_vol WHERE vol_id='$id'");
-    $fetch=mysql_fetch_assoc($sel);
+    $sel=mysqli_query($conn"SELECT * FROM add_vol WHERE vol_id='$id'");
+    $fetch=mysqli_fetch_assoc($sel);
 
         $vol_id=$fetch['vol_id'];
         $vol_name=$fetch['vol_name'];

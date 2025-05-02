@@ -4,7 +4,7 @@
 
 	$id=$_GET['id'];
 
-	$del=mysql_query("DELETE FROM expenditure WHERE exp_id=$id");
+	$del=mysqli_query($conn,"DELETE FROM expenditure WHERE exp_id=$id");
 
 		if ($del)
 		{
